@@ -812,6 +812,37 @@ l11 62 118 0 118 0 11 -62z m-289 -313 l0 -55 -55 0 -55 0 0 55 0 55 55 0 55
         </div><!-- end container -->
     </div><!-- end copyrights -->
 
+    <!-- Models for home -->
+
+    <div class="modal fade" id="home_model" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+
+
+            <div class="modal-header">
+                <h4 class="modal-title">Welcome to my website.</h4>
+            </div>
+            <div class="modal-body">
+
+                <p style="font-weight:bold ; color:black;">Hope you will like what you see..</p>
+                
+
+
+ 
+            </div>
+            <div class="modal-footer">   
+                         
+                <button type="button" href="blogs.html" onclick="window.open('blogs.html?id=four');" class="w3-button w3-blue w3-round-xlarge" >Checkout my Python blog.</button>
+                <button type="button" class="w3-button w3-black w3-round-xlarge" data-dismiss="modal">Close</button>
+            </div>
+
+
+          </div>
+        </div>
+    </div>
+
+    <!-- End of home model -->
+
     <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
     <!-- REFRESH TO TOP-->
@@ -833,6 +864,14 @@ l11 62 118 0 118 0 11 -62z m-289 -313 l0 -55 -55 0 -55 0 0 55 0 55 55 0 55
         $(window).on('beforeunload', function(){
             $(window).scrollTop(0);
         });
+        
+        
+        setTimeout(function() {
+            $('#home_model').modal('show');
+        }, 5000);
+
+        
+
     </script>
     <script>
     function my_WhatsApp_msg() {

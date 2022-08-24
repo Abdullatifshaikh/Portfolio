@@ -104,24 +104,25 @@
                 <p>Hope you will like it, share it and also be a part of it.</p>
             </div><!-- end title -->
             <form method="get" action="index.html">
-                <p><button class="w3-button w3-black w3-round-xlarge">Home</button>
+                <button class="w3-button w3-black w3-round-xlarge">Home</button>
             </form>
 			<div class="gallery-menu row">
 				<div class="col-md-12">
 					<div class="button-group filter-button-group text-left">
-						<button class="active" data-filter="*">All</button>
-						<button data-filter=".gal_a">Life Journey</button>
-						<button data-filter=".gal_b">Productivity</button>
-						<button data-filter=".gal_c">Social</button>
-						<button data-filter=".gal_d">Technology</button>
+						<button id="f1" class="active" data-filter=".gal_a">Life Journey</button>
+						<button id="f2" data-filter=".gal_b">Productivity</button>
+						<button id="f3" data-filter=".gal_c">Social</button>
+                        <button id="f4" data-filter=".gal_d">Python</button>
+						<button id="f5" data-filter=".gal_e">Technology</button>
 					</div>
 				</div>
 			</div>
 			
 			<div class="gallery-list row">
                         <!-- SECTION A : Life Journey -->
-                        <div class="col-md-4 col-sm-6 col-lg-4 gallery-grid gal_a">
-                        </a><div class="post-box">
+                        <a href="" data-toggle="modal" data-target=".bd-ap1-modal-lg">
+                        <div style="margin: 20px;" class="col-md-4 col-sm-6 col-lg-4 gallery-grid gal_a">
+                        <div class="post-box">
                             <div class="post-thumb">
                                 <img src="blogs/personal/images/post1.jpg" class="img-fluid" alt="post1" />
                                 <div class="date">
@@ -130,7 +131,7 @@
                                 </div>
                             </div>
                             <div class="post-info">
-                                <a href="" data-toggle="modal" data-target=".bd-ap1-modal-lg"><h4>20 August 2022 / Success</h4></a>
+                                <h4>20 August 2022 / Success</h4>
                                 <ul>
                                     <li>by Abdul Latif</li>
                                     <li>( Aug 20, 2022 ) </li>
@@ -144,6 +145,7 @@
                             </div>
                         </div>
                         </div>
+                        </a>
                             
                             <!-- ALL POST A MODELS HERE -->
                         
@@ -213,8 +215,9 @@
                         
 
                         <!-- SECTION C : Social -->
-                        <div class="col-md-4 col-sm-6 col-lg-4 gallery-grid gal_c">
-                        </a><div class="post-box">
+                        <a href="" data-toggle="modal" data-target=".bd-cp1-modal-lg">
+                        <div style="margin: 20px;" class="col-md-4 col-sm-6 col-lg-4 gallery-grid gal_c">
+                        <div class="post-box">
                             <div class="post-thumb">
                                 <img src="blogs/social/images/post1.jpg" class="img-fluid" alt="post1" />
                                 <div class="date">
@@ -223,7 +226,7 @@
                                 </div>
                             </div>
                             <div class="post-info">
-                                <a href="" data-toggle="modal" data-target=".bd-cp1-modal-lg"><h4>14 August 2022 / Freedom</h4></a>
+                                <h4>14 August 2022 / Freedom</h4>
                                 <ul>
                                     <li>by Abdul Latif</li>
                                     <li>( Aug 14, 2022 ) </li>
@@ -235,55 +238,197 @@
                             </div>
                         </div>
                         </div>
+                        </a>
                         
                                 
-                                <!-- ALL POST C MODELS HERE -->
-                            
-                                <!-- Modal C P1 -->
-                                <div class="modal fade bd-cp1-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                      <div class="modal-content">
-                            
-                            
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">14 August 2022 / Freedom</h4>
-                                        </div>
-                                        <div class="modal-body">
-                            
-                                            <img src="blogs/social/images/post1.jpg"  width="50%" height="50%" class="img-fluid" alt="post1" />
-                                            <p style="font-weight:bold ; color:black;">INDEPENDENCE<br/><br/>
-                            
-                                                14 August 1947, the day we became an independent country and we celebrate this day with joy and happiness every year and, of course, we should. But in my mind, it always raises this question, that are we really independent? Just think about it for a second.<br/><br/>
-                                                
-                                                I think the answer is no, we are not, because we are still the slaves of the same mentally.<br/><br/>
-                                                
-                                                Our same conservative mentality, our same 9 to 5 mentality, our same degrading others mentally, our same greediness and doing everything so that we can feed our egos.<br/><br/>
-                                                
-                                                The painful point is that we are "OK" with it, we have closed our eyes to it, but the reality is we have to open our eyes some day and have to face it and that will be very hard.<br/><br/>
-                                                
-                                                Let's just pause our lives for some time to rethink what we are doing and what we can do better before it's too late.<br/><br/>
-                                                
-                                                #IndependenceDay
-                                                #Pakistan
-                                            </p>
-                                            
-                            
-                            
-                             
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="w3-button w3-black w3-round-xlarge" data-dismiss="modal">Close</button>
-                                        </div>
-                            
-                            
-                                      </div>
-                                    </div>
+                        <!-- ALL POST C MODELS HERE -->
+                        <!-- Modal C P1 -->
+                        <div class="modal fade bd-cp1-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                    
+                    
+                                <div class="modal-header">
+                                    <h4 class="modal-title">14 August 2022 / Freedom</h4>
                                 </div>
-    
-                                <!--modelend-->
+                                <div class="modal-body">
+                    
+                                    <img src="blogs/social/images/post1.jpg"  width="50%" height="50%" class="img-fluid" alt="post1" />
+                                    <p style="font-weight:bold ; color:black;">INDEPENDENCE<br/><br/>
+                    
+                                        14 August 1947, the day we became an independent country and we celebrate this day with joy and happiness every year and, of course, we should. But in my mind, it always raises this question, that are we really independent? Just think about it for a second.<br/><br/>
+                                        
+                                        I think the answer is no, we are not, because we are still the slaves of the same mentally.<br/><br/>
+                                        
+                                        Our same conservative mentality, our same 9 to 5 mentality, our same degrading others mentally, our same greediness and doing everything so that we can feed our egos.<br/><br/>
+                                        
+                                        The painful point is that we are "OK" with it, we have closed our eyes to it, but the reality is we have to open our eyes some day and have to face it and that will be very hard.<br/><br/>
+                                        
+                                        Let's just pause our lives for some time to rethink what we are doing and what we can do better before it's too late.<br/><br/>
+                                        
+                                        #IndependenceDay
+                                        #Pakistan
+                                    </p>
+                                    
+                    
+                    
+                    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="w3-button w3-black w3-round-xlarge" data-dismiss="modal">Close</button>
+                                </div>
+                    
+                    
+                            </div>
+                            </div>
+                        </div>
+
+                        <!--modelend-->
+                            
+                                
                         
 
-                        <!-- SECTION D : Technology  -->
+                        <!-- SECTION D : Python  -->
+                        <div style="padding: 10px" class="col-md-4 col-sm-6 col-lg-12 gallery-grid gal_d">
+                        
+                            <div class="post-box">
+                                <div class="container">
+                                    <div class="row">
+                                        <div style="padding: 20px;" class="col-4">
+                                            <!--slider -->
+
+                                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                                  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                                  <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                                                  <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                  <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="blogs/Python/p1/1.png" alt="First slide">
+                                                  </div>
+                                                  <div class="carousel-item">
+                                                    <img class="d-block w-100" src="blogs/Python/p1/2.png" alt="Second slide">
+                                                  </div>
+                                                  <div class="carousel-item">
+                                                    <img class="d-block w-100" src="blogs/Python/p1/3.png" alt="Third slide">
+                                                  </div>
+                                                  <div class="carousel-item">
+                                                    <img class="d-block w-100" src="blogs/Python/p1/4.png" alt="Third slide">
+                                                  </div>
+                                                  <div class="carousel-item">
+                                                    <img class="d-block w-100" src="blogs/Python/p1/5.png" alt="Third slide">
+                                                  </div>
+                                                  <div class="carousel-item">
+                                                    <img class="d-block w-100" src="blogs/Python/p1/6.png" alt="Third slide">
+                                                  </div>
+                                                  <div class="carousel-item">
+                                                    <img class="d-block w-100" src="blogs/Python/p1/7.png" alt="Third slide">
+                                                  </div>
+                                                </div>
+                                                <a class="carousel-control-prev"  href="#carouselExampleIndicators" role="button"  data-slide="prev">
+                                                  <span  style="background-color: #000000;" class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                  <span  class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next"  href="#carouselExampleIndicators" role="button"  data-slide="next">
+                                                  <span style="background-color: #000000;" class="carousel-control-next-icon black"  aria-hidden="true"></span>
+                                                  <span  class="sr-only">Next</span>
+                                                </a>
+                                              </div>
+                                            <!--slider end -->
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="date">
+                                                <span>14</span>
+                                                <span>Aug</span>
+                                            </div>
+
+                                            <div style="padding: 20px;">
+                                            <div>
+
+                                            <h4>The Best way to Learn Python.</h4>
+                                            
+                                                
+                                                    1. Try writing concurent code.<br/><br/>
+                                                    2. Learn about interpreters.<br/><br/>
+                                                    3. Write a lot of bugy code.<br/><br/>
+                                                    4. Read the documentation.<br/><br/>
+                                                    5. Learn about Sockets, Network libraries, Async Features and a little about Scipy and Numpy.<br/><br/> 
+                                                    6. Learn about most popular libraries.
+                                                
+                                                <br/><br/><br/>
+
+                                                <div class="fixed-bottom-0 end-0">
+                                                    <h5 style="display:inline ;"> Follow me : </h5>
+                                                    <ul style="display:inline ;">
+                                                        <a href="https://www.facebook.com/with.abdullatif" class="fa fa-facebook" style="color: rgb(27, 27, 27);" target="_blank"></a>
+                                                        <a href="https://twitter.com/with_latif" class="fa fa-twitter" style="color: rgb(27, 27, 27);" target="_blank"></a>
+                                                        <a href="https://www.instagram.com/with.latif/" class="fa fa-instagram" style="color: rgb(27, 27, 27);" target="_blank"></a>
+                                                        <a href="https://wa.link/2vf8vj" class="fa fa-whatsapp" style="color: rgb(27, 27, 27);" target="_blank"></a>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+
+                                                
+
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            
+                            </div>
+                        </div>
+
+                        <!-- Modal D P1 -->
+                        <div class="modal fade bd-dp1-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                    
+                    
+                                <div class="modal-header">
+                                    <h4 class="modal-title">14 August 2022 / Freedom</h4>
+                                </div>
+                                <div class="modal-body">
+                    
+                                    <img src="blogs/social/images/post1.jpg"  width="50%" height="50%" class="img-fluid" alt="post1" />
+                                    <p style="font-weight:bold ; color:black;">INDEPENDENCE<br/><br/>
+                    
+                                        14 August 1947, the day we became an independent country and we celebrate this day with joy and happiness every year and, of course, we should. But in my mind, it always raises this question, that are we really independent? Just think about it for a second.<br/><br/>
+                                        
+                                        I think the answer is no, we are not, because we are still the slaves of the same mentally.<br/><br/>
+                                        
+                                        Our same conservative mentality, our same 9 to 5 mentality, our same degrading others mentally, our same greediness and doing everything so that we can feed our egos.<br/><br/>
+                                        
+                                        The painful point is that we are "OK" with it, we have closed our eyes to it, but the reality is we have to open our eyes some day and have to face it and that will be very hard.<br/><br/>
+                                        
+                                        Let's just pause our lives for some time to rethink what we are doing and what we can do better before it's too late.<br/><br/>
+                                        
+                                        #IndependenceDay
+                                        #Pakistan
+                                    </p>
+                                    
+                    
+                    
+                    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="w3-button w3-black w3-round-xlarge" data-dismiss="modal">Close</button>
+                                </div>
+                    
+                    
+                            </div>
+                            </div>
+                        </div>
+
+                        <!--modelend-->
                         
 
 
@@ -314,6 +459,18 @@
         $(window).on('beforeunload', function(){
             $(window).scrollTop(0);
         });
+
+        setTimeout(function() {
+            const params = new URLSearchParams(window.location.search)
+            var x=params.get('id')
+            if (x === "four"){
+                $('#f4').click();
+            }   
+            else{
+                $('#f1').click();
+            }
+            
+        }, 100);
 
     </script>
 </body>
