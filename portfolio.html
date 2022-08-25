@@ -108,8 +108,7 @@
 			<div class="gallery-menu row col-md-4 col-sm-3 col-lg-12">
 				<div class="">
 					<div class="button-group filter-button-group text-left ">
-						<button style="margin:1%;" class="active" data-filter="*">All</button>
-						<button style="margin:1%;" data-filter=".gal_d">Graphic Design</button>
+						<button id="first_g" class="active" style="margin:1%;" data-filter=".gal_d">Graphic Design</button>
 						<button style="margin:1%;" data-filter=".gal_u">UI/UX Design</button>
 						<button style="margin:1%;" data-filter=".gal_w">Website Design</button>
 						<button style="margin:1%;" data-filter=".gal_m">Motion Graphics</button>
@@ -385,6 +384,11 @@
         $(window).on('beforeunload', function(){
             $(window).scrollTop(0);
         });
+
+		setTimeout(function() {
+			$('#first_g').click();
+            
+        }, 100);
     </script>
 </body>
 </html>
